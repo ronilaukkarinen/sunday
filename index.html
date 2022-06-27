@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+	<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<style type="text/css">
+
+			body {text-align: center; margin-top: 50px;font-family: 'Inter', sans-serif;}
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      b,
+      strong {
+        font-weight: 600;
+      }
+
+			#weeksLeft { margin-bottom: 30px;}
+
+			div#main { width: 1100px; margin-left: auto; margin-right: auto; }
+
+			div#mainpane { width: 1000px;  margin-left: 50px; margin-bottom: 50px;}
+
+			#leftpane {float: left; width: 500px; margin-right: 100px; text-align: left; display: none;}
+
+			#rightpane {float: left; width: 500px; text-align: left; display: none;}
+
+			#ageInput { text-align: left; display: none;}
+
+			#ageInputContainer { width: 100%; }
+
+			div.clear { clear: both; }
+
+			#footer { margin-top: 50px; margin-bottom: 50px;}
+
+			.monthBlock {
+        width: auto;
+        height: auto;
+        overflow: hidden;
+        display: flex;
+        gap: 2px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 2px;
+        width: auto;
+        height: 6px;
+      }
+
+      .weekBlockNotBorn,
+      .weekBlockLeft,
+      .weekBlockSpent {
+        width: 4px;
+        height: 4px;
+        display: inline-flex;
+        border: 1px solid #000;
+        background-color: #fff;
+      }
+
+      .weekBlockNotBorn {
+        background-color: #fff;
+        border-color: #fff;
+      }
+
+			.weekBlockSpent {
+        background-color: #000;
+      }
+
+			.weekBlockLeft {
+        background-color: #fff;
+      }
+
+			.weekBlockNotBorn { background-color: white; display: inline-block;}
+
+			.yearBlock { margin-right: 10px; display: inline-block;}
+			.yearBlock br { display: none; }
+
+			#stuffDoneContainer { display: none}
+
+			#stuffTodoContainer { display: none }
+
+			.decadeBlock { margin-bottom: 10px; line-height: 1; }
+
+			#footer { margin-top: 100px;}
+
+			#title { margin-bottom: 30px;}
+
+			small { font-size: 12px; margin-bottom: 4px; display: block;}
+		</style>
+
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="main.js">
+		</script>
+
+
+
+	</head>
+
+	<body>
+
+		<div id="main">
+
+			<h2 id="weeksLeft"></h2>
+
+			<div id="mainpane">
+				<div id="mainpanegraphic"></div>
+			</div>
+
+			<h3 id="title"></h3>
+
+			<div id="leftpane">
+
+				<ul id="listStuffDone">
+				</ul>
+
+			</div>
+
+		</div>
+	</body>
+</html>
