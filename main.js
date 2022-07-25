@@ -1,7 +1,7 @@
 // Base vars
 var weeksLeft;
 var yearOfBirth;
-var ageExpectancy = 80;
+var ageExpectancy = 92;
 
 var totalWeeksInLife = ageExpectancy * 52.1429;
 var birthdayDate;
@@ -71,7 +71,7 @@ function plotLifeChart() {
 
   for (var row = 0; row < 4; row++) {
     $('#mainpanegraphic').append("<div id='graphic_row_" + row + "' class='decadeBlock'></div>");
-    for (var column = 0; column < 20; column++) {
+    for (var column = 0; column < 24; column++) {
       $('#graphic_row_' + row).append('<span id="graphic_year_' + row + '_' + column + '" class="yearBlock"><small>' + curYear + '</small><br/><span>');
       curWeekOfYear = 1;
       for (var i = 0; i < 13; i++) {
@@ -149,7 +149,7 @@ function calculateEverything() {
     weeksLeft = returnWeeks(myBirthDay);
 
     $('#weeksLeft').html(weeksLeft + " sunnuntaita jäljellä.");
-    $('#title').html('Kuinka aiot käyttää nämä päivät ' + (myName ? " " + myName : "") + "?");
+    // $('#title').html('Kuinka aiot käyttää nämä päivät ' + (myName ? " " + myName : "") + "?");
     $('#ageInput').hide();
     plotLifeChart();
 }
